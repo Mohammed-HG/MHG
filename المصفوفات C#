@@ -1,0 +1,56 @@
+// التمرين الاول
+
+//1
+
+List<int> salaries = new List<int>()
+
+{ 3000, 5000, 25000, 10000, 8000, 7000};
+Console.WriteLine("[" + string.Join(", ", salaries) + "]");
+
+//2
+
+salaries.RemoveAt(1);
+
+//3
+
+salaries.Add(4500);
+Console.WriteLine("[" + string.Join(", ", salaries) + "]");
+
+//4
+
+salaries[1] = salaries[1] + 500;
+Console.WriteLine("[" + string.Join(", ", salaries) + "]");
+
+//التمرين الثاني
+
+//1
+
+List<int> salary = new List<int>()
+
+{ 3000, 5000, 25000, 10000, 8000, 7000};
+
+Console.WriteLine("[" + string.Join(", ", salary) + "]");
+
+//2
+
+Console.Write("Enter Salary Want To Remove: ");
+int i = Convert.ToInt32(Console.ReadLine());
+salary.RemoveAt(i);
+Console.WriteLine("[" + string.Join(", ", salary) + "]");
+
+
+//3
+
+Console.Write("Enter New Salary To Add: ");
+int x = int.Parse(Console.ReadLine());
+salary.Add(x);
+Console.WriteLine("[" + string.Join(", ", salary) + "]");
+
+//4
+
+Console.Write("Locate The Salary You Want To Increase: ");
+int y = int.Parse(Console.ReadLine());
+Console.Write("Enter The Salary Increase: ");
+int z = int.Parse(Console.ReadLine());
+salary[y] = salary[y] + z;
+Console.WriteLine("[" + string.Join(", ", salary) + "]");
