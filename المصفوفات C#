@@ -33,7 +33,7 @@ Console.WriteLine("[" + string.Join(", ", salary) + "]");
 
 //2
 
-Console.Write("Enter Salary Want To Remove: ");
+Console.Write(""Enter Number Salary Want To Remove: ");
 int i = Convert.ToInt32(Console.ReadLine());
 salary.RemoveAt(i);
 Console.WriteLine("[" + string.Join(", ", salary) + "]");
